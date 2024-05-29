@@ -9,7 +9,7 @@ coroutine.wrap(function()
   local site = sites[math.random(1, #sites)]
   local el = get("site-anchor")
 
-  site = site.name .. "." .. site.tld
+  site = "buss://" .. site.name .. "." .. site.tld
 
   el.set_href(site)
 
