@@ -12,12 +12,4 @@ coroutine.wrap(function()
   site = "buss://" .. site.name .. "." .. site.tld
 
   el.set_href(site)
-
-  -- doesn't work in normal bussin and also broken on
-  -- my custom version (atleast on page load)
-  --[[
-  if set_href ~= nil then
-    set_href(site)
-  end
-  --]]
 end)()
